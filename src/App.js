@@ -12,6 +12,8 @@ import AddEditProductECPage from './pages/Admin/ProductsECPage/AddEditProductECP
 // eslint-disable-next-line no-unused-vars
 import axiosInterceptor from './utility/axios-token-interceptor';
 import InscriptionPage from './pages/InscriptionPage/InscriptionPage';
+import HomePage from './pages/HomePage/HomePage';
+import NavBarCustom from './components/NavBarCustom/NavBarCustom';
 
 /**
  * Main App component
@@ -35,9 +37,11 @@ const App = () => {
   return (
     <BrowserRouter>
       {/* <NavBar navBarOptions={navBarOptions} /> */}
+      <NavBarCustom/>
       <div className="App">
         <Routes>
           <Route index element={<InscriptionPage />} />
+          <Route path="home" element={<HomePage/>}/>
           <Route path="login" element={<LoginPage />} />
           <Route path="products" element={<ProductsPage />} />
           <Route
