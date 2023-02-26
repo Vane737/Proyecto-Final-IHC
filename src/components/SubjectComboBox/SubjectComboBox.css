@@ -1,0 +1,20 @@
+.container-select {
+    background-color: rgba(188, 199, 215, 0.20);
+    margin: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px;
+}
+
+/* .select-border-title {
+    border-bottom: rgb(153, 147, 147) 2px solid;
+} */
+
+.button-style {
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.invissible {
+    display: none;
+}
