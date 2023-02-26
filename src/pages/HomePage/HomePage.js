@@ -1,4 +1,5 @@
 import Card from '../../components/Card/Card';
+import SubjectTable from '../../components/SubjectTable/SubjectTable';
 
 export default function HomePage() {
   const arrTransactions = [
@@ -33,8 +34,10 @@ export default function HomePage() {
         })}
       </div>
       <div className="row py-5">
-        <h3>ESTAS SON TUS TRANSACCIONES:</h3>
-
+        <div className='col'>
+          <h3>ESTAS SON TUS TRANSACCIONES:</h3>
+          <SubjectTable/>
+        </div>
       </div>
     </div>
   );
