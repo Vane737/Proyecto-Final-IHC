@@ -2,7 +2,6 @@ import './assets/scss/stylesheet.scss';
 import Boot from './redux/boot';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PrivateRoute from './utility/PrivateRoute';
-import LoginPage from './pages/LoginPage/LoginPage';
 import ProductsPage from './pages/ProductsPage/ProductsPage';
 import MyProfilePage from './pages/Admin/MyProfilePage/MyProfilePage';
 import ListExamplePage from './pages/Admin/ListExamplePage/ListExamplePage';
@@ -12,6 +11,8 @@ import AddEditProductECPage from './pages/Admin/ProductsECPage/AddEditProductECP
 // eslint-disable-next-line no-unused-vars
 import axiosInterceptor from './utility/axios-token-interceptor';
 import InscriptionPage from './pages/InscriptionPage/InscriptionPage';
+import HomePage from './pages/HomePage/HomePage';
+import NavBarCustom from './components/NavBarCustom/NavBarCustom';
 
 /**
  * Main App component
@@ -34,9 +35,10 @@ const App = () => {
   return (
     <BrowserRouter>
       {/* <NavBar navBarOptions={navBarOptions} /> */}
+      <NavBarCustom/>
       <div className="App">
         <Routes>
-          <Route index element={<InscriptionPage />} />
+          <Route path="home" element={<HomePage/>}/>
           <Route path="login" element={<InscriptionPage />} />
           <Route path="products" element={<ProductsPage />} />
           <Route
