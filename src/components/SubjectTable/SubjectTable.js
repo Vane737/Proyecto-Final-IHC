@@ -33,7 +33,7 @@ export default function SubjectTable() {
     
   ];
   return (
-    <table class="table">
+    <table className="table">
       <thead className="custom-table">
         <tr>
           <th></th>
