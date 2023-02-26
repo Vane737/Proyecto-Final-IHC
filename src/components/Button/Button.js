@@ -1,8 +1,7 @@
-export default function Button () {
+export default function Button ({ className, children  }) {
   return (
-    <button className="btn btn-primary">
-      My button
-      <i className="bi bi-alarm"></i>
+    <button className={className}>
+      { children }
     </button>
   );
 }
