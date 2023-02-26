@@ -23,7 +23,6 @@ const App = () => {
   // let navBarOptions = {
   //   main: [
   //     { option: 'Home', to: '/' },
-
   //   ],
   //   right: [
   //     { option: 'My Profile', to: '/my-profile', displayIfLoggedIn: true },
@@ -38,7 +37,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route index element={<InscriptionPage />} />
-          <Route path="login" element={<LoginPage />} />
+          <Route path="login" element={<InscriptionPage />} />
           <Route path="products" element={<ProductsPage />} />
           <Route
             path="my-profile"
