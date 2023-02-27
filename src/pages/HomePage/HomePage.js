@@ -1,9 +1,32 @@
 import Card from '../../components/Card/Card';
+import Horario from '../../components/Horario/Horario';
 import SubjectTable from '../../components/SubjectTable/SubjectTable';
-// import SubjectTableP from '../../components/SubjectTable/SubjectTableP';
+
+
+
+
+import TransactionTable from '../../components/TransactionTable/TransactionTable';
 
 export default function HomePage() {
   const arrTransactions = [
+    {
+      fecha: '10/08/2022',
+      hora: '3:30:00 AM',
+      gestion: '2-2022',
+      carrera: '187-3',
+      descripcion: 'Inscripción',
+      via: 'Web'
+    },
+    {
+      fecha: '1/30/2023',
+      hora: '8:19:00 PM',
+      gestion: '3-2022',
+      carrera: '187-3',
+      descripcion: 'Inscripción',
+      via: 'Web'
+    },
+  ];
+  const arrActions = [
     {
       titulo: 'INSCRIPCIÓN',
       carrera: 'INGENIERIA INFORMATICA 187-3 ',
@@ -20,6 +43,7 @@ export default function HomePage() {
       icono: 'bi bi-pencil-square',
     },
   ];
+
 
 // const groups = [
 //     {
@@ -88,26 +112,31 @@ export default function HomePage() {
 //       conflictos: 'Ninguno'
 //     },
 // ];
+
   return (
     <div className="container">
       <h1>232561145 - LIZZETH VALLEJO PEREZ</h1>
       <div className="row">
-        {arrTransactions.map((transaction, index) => {
+        {arrActions.map((transaction, index) => {
           return (
             <div className="col" key={index}>
-              <Card titulo={transaction.titulo} 
-              carrera={transaction.carrera}
-              icono={transaction.icono}/>
+              <Card
+                titulo={transaction.titulo}
+                carrera={transaction.carrera}
+                icono={transaction.icono}
+              />
             </div>
           );
         })}
       </div>
       <div className="row py-5">
-        <div className='col'>
+        <div className="col">
           <h3>ESTAS SON TUS TRANSACCIONES:</h3>
-          <SubjectTable/>
-          {/* <SubjectTableP data={groups}/> */}
-          {/* <SubjectTableP data={arrFisica}/> */}
+
+          <TransactionTable data={arrTransactions}/>
+          <SubjectTable />
+          <Horario/>
+
         </div>
       </div>
     </div>
