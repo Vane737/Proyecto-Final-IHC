@@ -39,7 +39,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path="home" element={<HomePage/>}/>
-          <Route path="login" element={<InscriptionPage />} />
+          <Route path="inscription" element={<InscriptionPage />} />
           <Route path="products" element={<ProductsPage />} />
           <Route
             path="my-profile"

@@ -1,6 +1,6 @@
 import Check from '../Check/Check';
 import './SubjectTable.css'
-export default function SubjectTableP({data}) {
+export default function SubjectTableP({group}) {
   return (
     <table className="table">
       <thead className="custom-table">
@@ -14,7 +14,7 @@ export default function SubjectTableP({data}) {
         </tr>
       </thead>
       <tbody>
-      {data.map((group, index)=>{
+      {group.map((group, index)=>{
           return (
             <tr key={index}>
               <td>{<Check/>}</td>

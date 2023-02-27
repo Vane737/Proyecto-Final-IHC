@@ -1,6 +1,6 @@
 import Card from '../../components/Card/Card';
 import SubjectTable from '../../components/SubjectTable/SubjectTable';
-import SubjectTableP from '../../components/SubjectTable/SubjectTableP';
+// import SubjectTableP from '../../components/SubjectTable/SubjectTableP';
 
 export default function HomePage() {
   const arrTransactions = [
@@ -20,66 +20,74 @@ export default function HomePage() {
       icono: 'bi bi-pencil-square',
     },
   ];
-  const arrCalculo = [
-    {
-          grupo: 'F1',
-          docente: 'Avendaño Gonzales Eudal',
-          horario: 'Mar 6:15 - 8:30, Jue 6:15 - 8:30',
-          cupos: '20',
-          conflictos: 'Ninguno'
-        },
-        {
-          grupo: 'H',
-          docente: 'Tejerina Guerra Julio',
-          horario: 'Mie 7:00 - 9:15, Vie 7:00 - 9:15',
-          cupos: '10',
-          conflictos: 'Ninguno'
-        },
-        {
-          grupo: 'SB',
-          docente: 'Justiniano Vaca Juan Tomas',
-          horario: 'Lun 8:30 - 10:00, Mie 8:30 - 10:00, Vie 8:30 - 10:00',
-          cupos: '0',
-          conflictos: 'Ninguno'
-        },
-        {
-          grupo: 'SF',
-          docente: 'Morales Mendez Magaly',
-          horario: 'Mar 9:15 - 11:30, Jue 9:15 - 11:30',
-          cupos: '10',
-          conflictos: 'Ninguno'
-        },
-  ];
-  const arrFisica = [
-    {
-      grupo: 'SG',
-      docente: 'Sanchez Hervas Jose Gabriel',
-      horario: 'Lun 13:00 - 14:30, Mar 7:00 - 9:15, Jue 7:00 - 9:15',
-      cupos: '20',
-      conflictos: 'Ninguno'
-    },
-    {
-      grupo: 'SI',
-      docente: 'Cayoja Lucana Victor Milton',
-      horario: 'Mar 7:00 - 9:15, Jue 7:00 - 9:15, Vie 10:00 - 11:30',
-      cupos: '20',
-      conflictos: 'Ninguno'
-    },
-    {
-      grupo: 'SK',
-      docente: 'Cayoja Lucana Victor Milton',
-      horario: 'Mar 16:00 - 18:15, Jue 16:00 - 18:15, Vie 16:00 - 17:30',
-      cupos: '20',
-      conflictos: 'Ninguno'
-    },
-    {
-      grupo: 'SM',
-      docente: 'Sanchez Velasco Enrique',
-      horario: 'Lun 15:15 - 16:45, Mar 15:15 - 16:45, Mar 16:45 - 18:15, Mie 15:15 - 16:45',
-      cupos: '20',
-      conflictos: 'Ninguno'
-    },
-  ];
+
+// const groups = [
+//     {
+//       grupo: 'F1',
+//       docente: 'Avendaño Gonzales Eudal',
+//       horario: 'Mar 6:15 - 8:30, Jue 6:15 - 8:30',
+//       cupos: '20',
+//       idmat: '1',
+//       conflictos: 'Ninguno'
+//     },
+//     {
+//       idmat: '1',
+//       grupo: 'H',
+//       docente: 'Tejerina Guerra Julio',
+//       horario: 'Mie 7:00 - 9:15, Vie 7:00 - 9:15',
+//       cupos: '10',
+//       conflictos: 'Ninguno'
+//     },
+//     {
+//       idmat: '1',
+//       grupo: 'SB',
+//       docente: 'Justiniano Vaca Juan Tomas',
+//       horario: 'Lun 8:30 - 10:00, Mie 8:30 - 10:00, Vie 8:30 - 10:00',
+//       cupos: '0',
+//       conflictos: 'Ninguno'
+//     },
+//     {
+//       idmat: '1',
+//       grupo: 'SF',
+//       docente: 'Morales Mendez Magaly',
+//       horario: 'Mar 9:15 - 11:30, Jue 9:15 - 11:30',
+//       cupos: '10',
+//       conflictos: 'Ninguno'
+//     },
+
+//     {
+//       idmat: '2',
+//       grupo: 'SG',
+//       docente: 'Sanchez Hervas Jose Gabriel',
+//       horario: 'Lun 13:00 - 14:30, Mar 7:00 - 9:15, Jue 7:00 - 9:15',
+//       cupos: '20',
+//       conflictos: 'Ninguno'
+//     },
+//     {
+//       idmat: '2',
+//       grupo: 'SI',
+//       docente: 'Cayoja Lucana Victor Milton',
+//       horario: 'Mar 7:00 - 9:15, Jue 7:00 - 9:15, Vie 10:00 - 11:30',
+//       cupos: '20',
+//       conflictos: 'Ninguno'
+//     },
+//     {
+//       idmat: '2',
+//       grupo: 'SK',
+//       docente: 'Cayoja Lucana Victor Milton',
+//       horario: 'Mar 16:00 - 18:15, Jue 16:00 - 18:15, Vie 16:00 - 17:30',
+//       cupos: '20',
+//       conflictos: 'Ninguno'
+//     },
+//     {
+//       idmat: '2',
+//       grupo: 'SM',
+//       docente: 'Sanchez Velasco Enrique',
+//       horario: 'Lun 15:15 - 16:45, Mar 15:15 - 16:45, Mar 16:45 - 18:15, Mie 15:15 - 16:45',
+//       cupos: '20',
+//       conflictos: 'Ninguno'
+//     },
+// ];
   return (
     <div className="container">
       <h1>232561145 - LIZZETH VALLEJO PEREZ</h1>
@@ -98,8 +106,8 @@ export default function HomePage() {
         <div className='col'>
           <h3>ESTAS SON TUS TRANSACCIONES:</h3>
           <SubjectTable/>
-          <SubjectTableP data={arrCalculo}/>
-          <SubjectTableP data={arrFisica}/>
+          {/* <SubjectTableP data={groups}/> */}
+          {/* <SubjectTableP data={arrFisica}/> */}
         </div>
       </div>
     </div>
