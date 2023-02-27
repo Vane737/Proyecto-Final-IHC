@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom';
 import './Card.css';
 export default function Card({ titulo, carrera, icono }) {
   return (
-    <div>
-      <div className="card border-light shadow-sm card-curstom">
+      <Link to={'/login'} className="card border-light shadow-sm card-curstom">
         {/* <img src={image} className="card-img-top" alt="cardImagen" /> */}
         <div className="card-body">
           <div className="row align-items-center">
@@ -15,7 +15,6 @@ export default function Card({ titulo, carrera, icono }) {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </Link>
   );
 }
