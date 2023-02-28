@@ -28,7 +28,7 @@ export default function SubjectComboBox({ subject, groups}) {
           return (
           <>
             {subject.id === group.idmat? 
-            <tr key={index}>
+            <tr key={index} className="bg-white">
               <td>{<Check/>}</td>
               <td>{group.grupo}</td>
               <td>{group.docente}</td>

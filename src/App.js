@@ -12,6 +12,7 @@ import axiosInterceptor from './utility/axios-token-interceptor';
 import InscriptionPage from './pages/InscriptionPage/InscriptionPage';
 import HomePage from './pages/HomePage/HomePage';
 import AdicionPage from './pages/AdicionPage/AdiciendoPage';
+import LevantamientoPage from './pages/LevantamientoPage/LevantamientoPage';
 
 
 /**
@@ -40,7 +41,7 @@ const App = () => {
           <Route path="home" element={<HomePage/>}/>
           <Route path="inscription" element={<InscriptionPage />} />
           <Route path="adicion" element={< AdicionPage/>} />
-          <Route path="levantamiento" element={< AdicionPage/>} />
+          <Route path="levantamiento" element={< LevantamientoPage/>} />
           <Route path="/" element={<HomePage/>} />
           <Route
             path="my-profile"
