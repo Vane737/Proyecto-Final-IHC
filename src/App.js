@@ -11,8 +11,8 @@ import AddEditProductECPage from './pages/Admin/ProductsECPage/AddEditProductECP
 import axiosInterceptor from './utility/axios-token-interceptor';
 import InscriptionPage from './pages/InscriptionPage/InscriptionPage';
 import HomePage from './pages/HomePage/HomePage';
-import NavBarCustom from './components/NavBarCustom/NavBarCustom';
-import Home from './pages/Home/Home';
+import AdicionPage from './pages/AdicionPage/AdiciendoPage';
+
 
 /**
  * Main App component
@@ -35,12 +35,13 @@ const App = () => {
   return (
     <BrowserRouter>
       {/* <NavBar navBarOptions={navBarOptions} /> */}
-      <NavBarCustom/>
       <div className="App">
         <Routes>
           <Route path="home" element={<HomePage/>}/>
           <Route path="inscription" element={<InscriptionPage />} />
-          <Route path="/" element={<Home />} />
+          <Route path="adicion" element={< AdicionPage/>} />
+          <Route path="levantamiento" element={< AdicionPage/>} />
+          <Route path="/" element={<HomePage/>} />
           <Route
             path="my-profile"
             element={

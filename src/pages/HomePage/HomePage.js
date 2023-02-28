@@ -1,6 +1,5 @@
 import Card from '../../components/Card/Card';
-import Horario from '../../components/Horario/Horario';
-import SubjectTable from '../../components/SubjectTable/SubjectTable';
+import NavBarCustom from '../../components/NavBarCustom/NavBarCustom';
 
 
 
@@ -31,16 +30,19 @@ export default function HomePage() {
       titulo: 'INSCRIPCIÓN',
       carrera: 'INGENIERIA INFORMATICA 187-3 ',
       icono: 'bi bi-pencil-square',
+      url: '/inscription'
     },
     {
       titulo: 'ADICIÓN',
       carrera: 'INGENIERIA INFORMATICA 187-3 ',
       icono: 'bi bi-pencil-square',
+      url: '/adicion'
     },
     {
       titulo: 'LEVANTAMIENTO',
       carrera: 'INGENIERIA INFORMATICA 187-3 ',
       icono: 'bi bi-pencil-square',
+      url: '/levantamiento'
     },
   ];
 
@@ -114,31 +116,33 @@ export default function HomePage() {
 // ];
 
   return (
-    <div className="container">
-      <h1>232561145 - LIZZETH VALLEJO PEREZ</h1>
-      <div className="row">
-        {arrActions.map((transaction, index) => {
-          return (
-            <div className="col" key={index}>
-              <Card
-                titulo={transaction.titulo}
-                carrera={transaction.carrera}
-                icono={transaction.icono}
-              />
-            </div>
-          );
-        })}
-      </div>
-      <div className="row py-5">
-        <div className="col">
-          <h3>ESTAS SON TUS TRANSACCIONES:</h3>
+    <>
+      <NavBarCustom/>
+      <div className="container py-5">
+        <h1>232561145 - LIZZETH VALLEJO PEREZ</h1>
+        <div className="row">
+          {arrActions.map((transaction, index) => {
+            return (
+              <div className="col" key={index}>
+                <Card
+                  titulo={transaction.titulo}
+                  carrera={transaction.carrera}
+                  icono={transaction.icono}
+                  url={transaction.url}
+                />
+              </div>
+            );
+          })}
+        </div>
+        <div className="row py-5">
+          <div className="col">
+            <h3>ESTAS SON TUS TRANSACCIONES:</h3>
 
-          <TransactionTable data={arrTransactions}/>
-          <SubjectTable />
-          <Horario/>
+            <TransactionTable data={arrTransactions}/>
 
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

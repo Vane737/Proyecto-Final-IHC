@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Card.css';
-export default function Card({ titulo, carrera, icono }) {
+export default function Card({ titulo, carrera, icono, url}) {
   return (
-      <Link to={'/login'} className="card border-light shadow-sm card-curstom">
+      <Link to={url} className="card border-light shadow-sm card-curstom">
         {/* <img src={image} className="card-img-top" alt="cardImagen" /> */}
         <div className="card-body">
           <div className="row align-items-center">
