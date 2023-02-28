@@ -2,7 +2,6 @@ import './assets/scss/stylesheet.scss';
 import Boot from './redux/boot';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PrivateRoute from './utility/PrivateRoute';
-import ProductsPage from './pages/ProductsPage/ProductsPage';
 import MyProfilePage from './pages/Admin/MyProfilePage/MyProfilePage';
 import ListExamplePage from './pages/Admin/ListExamplePage/ListExamplePage';
 import ProductsECPage from './pages/Admin/ProductsECPage/ProductsECPage';
@@ -13,6 +12,7 @@ import axiosInterceptor from './utility/axios-token-interceptor';
 import InscriptionPage from './pages/InscriptionPage/InscriptionPage';
 import HomePage from './pages/HomePage/HomePage';
 import NavBarCustom from './components/NavBarCustom/NavBarCustom';
+import Home from './pages/Home/Home';
 
 /**
  * Main App component
@@ -40,7 +40,7 @@ const App = () => {
         <Routes>
           <Route path="home" element={<HomePage/>}/>
           <Route path="inscription" element={<InscriptionPage />} />
-          <Route path="products" element={<ProductsPage />} />
+          <Route path="/" element={<Home />} />
           <Route
             path="my-profile"
             element={

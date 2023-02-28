@@ -19,3 +19,20 @@
     left: 0;
 }
 
+/* schedule */
+
+.container-schedule-header {
+    font-size: 40px;
+    width: 100%;
+    background: rgb(251, 255, 169);
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 60px ;
+
+}
+
+.custom-paragraph {
+    font-size: 16px;
+    color: aliceblue;
+}

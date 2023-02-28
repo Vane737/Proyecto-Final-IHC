@@ -1,0 +1,35 @@
+.container-schedule {
+    font-size: 40px;
+    min-height: 200px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(10, 30px) ;
+
+    /* grid-gap: 5px; */
+}
+
+
+.custom-item {
+    background:LightSkyBlue;
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    /* justify-items: center; */
+    /* align-self: center; */
+}
+
+
+.custom-schead{
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+}
+
+.custom-sched-header {
+    justify-items: center;
+    align-self: center;
+}
+
+.custom-item-hour {
+    background-color: rgba(188, 199, 215, 0.20);
+}

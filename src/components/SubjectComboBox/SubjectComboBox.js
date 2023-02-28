@@ -7,10 +7,10 @@ export default function SubjectComboBox({ subject, groups}) {
   
   return (
     <div className="">
-      <div className="mb-3 container-select shadow p-3 mb-5 rounded">
+      <div className="mb-3 container-select  p-3 mb-5 rounded">
         <div className="d-flex justify-content-between">
           <h5>{subject.nombre.toUpperCase() + ' - ' + subject.sigla.toUpperCase()}</h5>
-          <button className="button-style" onClick={() => setArrowDeploy(!arrowDeploy)}>{arrowDeploy ? <i class="bi bi-caret-up-fill"></i> : <i className="bi bi-caret-down-fill"></i>}</button>
+          <button className="button-style" onClick={() => setArrowDeploy(!arrowDeploy)}>{arrowDeploy ? <i className="bi bi-caret-up-fill"></i> : <i className="bi bi-caret-down-fill"></i>}</button>
         </div>
       <table className={arrowDeploy ? 'table' : 'invissible'}>
       <thead className="custom-table">
@@ -25,8 +25,10 @@ export default function SubjectComboBox({ subject, groups}) {
       </thead>
       <tbody>
       {groups.map((group, index)=>{
-          return (<>
-            {subject.id === group.idmat? <tr key={index}>
+          return (
+          <>
+            {subject.id === group.idmat? 
+            <tr key={index}>
               <td>{<Check/>}</td>
               <td>{group.grupo}</td>
               <td>{group.docente}</td>
