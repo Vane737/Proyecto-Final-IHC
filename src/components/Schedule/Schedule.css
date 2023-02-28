@@ -2,7 +2,7 @@
     font-size: 40px;
     min-height: 200px;
     width: 100%;
-    background: LightGray;
+    background: rgba(188, 199, 215, 0.2);;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(10, 30px) ;

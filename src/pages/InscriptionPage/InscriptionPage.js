@@ -1,3 +1,4 @@
+import NavAzul from '../../components/NavAzul/NavAzul';
 import Schedule from '../../components/Schedule/Schedule';
 import ScheduleHeader from '../../components/Schedule/ScheduleHeader';
 import SubjectComboBox from '../../components/SubjectComboBox/SubjectComboBox';
@@ -329,7 +330,7 @@ export default function InscriptionPage() {
   ];
   return (
     <div className="">
-      <div className="nav-bar-style"></div>
+      <NavAzul/>
       <div className="container">
         <div className="py-4 my-4">
           <h2>Grupos Ofertados</h2>
