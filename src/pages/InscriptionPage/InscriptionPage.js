@@ -207,7 +207,7 @@ export default function InscriptionPage() {
       color: 'rgba(42,157,143,0.28)',
     },
   ];
-
+  
   const arrHorarios = [
     {
       idmat: '1',
@@ -216,7 +216,18 @@ export default function InscriptionPage() {
       row: [1,3],
       horaI: '7:00',
       horaF: '8:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '7:00',
+          horaF: '7:45',
+          row: [1,2],
+        },
+        {  
+          horaI: '7:45',
+          horaF: '8:30',
+          row: [2,3]
+        },
+      ],
     },
     {
       idmat: '1',
@@ -225,7 +236,18 @@ export default function InscriptionPage() {
       row: [1,3],
       horaI: '7:00',
       horaF: '8:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '7:00',
+          horaF: '7:45',
+          row: [1,2],
+        },
+        { 
+          horaI: '7:45',
+          horaF: '8:30',
+          row: [2,3]
+        },
+      ],
     },
     {
       idmat: '1',
@@ -234,8 +256,18 @@ export default function InscriptionPage() {
       row: [1,3],
       horaI: '7:00',
       horaF: '8:30',
-
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '7:00',
+          horaF: '7:45',
+          row: [1,2],
+        },
+        { 
+          horaI: '7:45',
+          horaF: '8:30',
+          row: [2,3]
+        },
+      ],
     },
     {
       idmat: '2',
@@ -244,7 +276,18 @@ export default function InscriptionPage() {
       row: [3,5],
       horaI: '8:30',
       horaF: '10:00',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '8:30',
+          horaF: '9:15',
+          row: [3,4],
+        },
+        {  
+          horaI: '9:15',
+          horaF: '10:00',
+          row: [4,5]
+        },
+      ],
     },
     {
       idmat: '2',
@@ -253,7 +296,18 @@ export default function InscriptionPage() {
       row: [3,5],
       horaI: '8:30',
       horaF: '10:00',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '8:30',
+          horaF: '9:15',
+          row: [3,4],
+        },
+        {  
+          horaI: '9:15',
+          horaF: '10:00',
+          row: [4,5]
+        },
+      ],
     },
     {
       idmat: '2',
@@ -262,7 +316,18 @@ export default function InscriptionPage() {
       row: [3,5],
       horaI: '8:30',
       horaF: '10:00',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '8:30',
+          horaF: '9:15',
+          row: [3,4],
+        },
+        {  
+          horaI: '9:15',
+          horaF: '10:00',
+          row: [4,5]
+        },
+      ],
     },
     {
       idmat: '3',
@@ -271,7 +336,18 @@ export default function InscriptionPage() {
       row: [5,7],
       horaI: '10:00',
       horaF: '11:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '10:00',
+          horaF: '10:45',
+          row: [5,6],
+        },
+        {  
+          horaI: '10:45',
+          horaF: '11:30',
+          row: [6,7]
+        },
+      ],
     },
     {
       idmat: '3',
@@ -280,7 +356,18 @@ export default function InscriptionPage() {
       row: [5,7],
       horaI: '10:00',
       horaF: '11:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '10:00',
+          horaF: '10:45',
+          row: [5,6],
+        },
+        {  
+          horaI: '10:45',
+          horaF: '11:30',
+          row: [6,7]
+        },
+      ],
     },
     {
       idmat: '3',
@@ -289,7 +376,18 @@ export default function InscriptionPage() {
       row: [5,7],
       horaI: '10:00',
       horaF: '11:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '10:00',
+          horaF: '10:45',
+          row: [5,6],
+        },
+        {  
+          horaI: '10:45',
+          horaF: '11:30',
+          row: [6,7]
+        },
+      ],
     },
     {
       idmat: '4',
@@ -298,7 +396,23 @@ export default function InscriptionPage() {
       row: [7,10],
       horaI: '18:15',
       horaF: '20:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '18:15',
+          horaF: '19:00',
+          row: [7,8],
+        },
+        {  
+          horaI: '19:00',
+          horaF: '19:45',
+          row: [8,9]
+        },
+        {  
+          horaI: '19:45',
+          horaF: '20:30',
+          row: [9,10]
+        },
+      ],
     },
     {
       idmat: '4',
@@ -307,7 +421,23 @@ export default function InscriptionPage() {
       row: [7,10],
       horaI: '18:15',
       horaF: '20:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '18:15',
+          horaF: '19:00',
+          row: [7,8],
+        },
+        {  
+          horaI: '19:00',
+          horaF: '19:45',
+          row: [8,9]
+        },
+        {  
+          horaI: '19:45',
+          horaF: '20:30',
+          row: [9,10]
+        },
+      ],
     },
     {
       idmat: '5',
@@ -316,7 +446,18 @@ export default function InscriptionPage() {
       row: [3,5],
       horaI: '08:30',
       horaF: '10:00',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '8:30',
+          horaF: '9:15',
+          row: [3,4],
+        },
+        {  
+          horaI: '9:15',
+          horaF: '10:00',
+          row: [4,5]
+        },
+      ],
     },
     {
       idmat: '5',
@@ -325,7 +466,18 @@ export default function InscriptionPage() {
       row: [5,7],
       horaI: '10:00',
       horaF: '11:30',
-      periodo: 2,
+      periodo: [
+        {
+          horaI: '10:00',
+          horaF: '10:45',
+          row: [5,6],
+        },
+        {  
+          horaI: '10:45',
+          horaF: '11:30',
+          row: [6,7]
+        },
+      ],
     },
 
   ];

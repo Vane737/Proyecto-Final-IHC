@@ -5,7 +5,7 @@
     background: rgba(188, 199, 215, 0.2);;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(10, 30px) ;
+    grid-template-rows: repeat(9, 30px) ;
 
     /* grid-gap: 5px; */
 }
@@ -31,5 +31,6 @@
 }
 
 .custom-item-hour {
-    background-color: rgba(188, 199, 215, 0.20);
+    background-color: rgb(42, 96, 177);
+    color: rgb(233, 181, 48);
 }

@@ -6,7 +6,7 @@ import ScheduleItem from './ScheduleItem';
 export default function Schedule({ arrMaterias, arrHorarios }) {
 
     const addMins = (() => {
-        
+
     })
 
   return (
@@ -22,7 +22,13 @@ export default function Schedule({ arrMaterias, arrHorarios }) {
                     <>
                         <ScheduleItem materia={materia} horario={horario}/>
                         {
-                            
+                            horario.periodo.map((rows, index) => {
+                                return (
+                                    <>
+                                        <ScheduleHour horaI={rows.horaI} horaF={rows.horaF} rows={rows.row}/>
+                                    </>
+                                );
+                            })
                         } 
                     </>
                       ) : (
