@@ -6,6 +6,7 @@ import MyProfilePage from './pages/Admin/MyProfilePage/MyProfilePage';
 import ListExamplePage from './pages/Admin/ListExamplePage/ListExamplePage';
 import ProductsECPage from './pages/Admin/ProductsECPage/ProductsECPage';
 import AddEditProductECPage from './pages/Admin/ProductsECPage/AddEditProductECPage';
+import ProductsPage from './pages/ProductsPage/ProductsPage';
 
 // eslint-disable-next-line no-unused-vars
 import axiosInterceptor from './utility/axios-token-interceptor';
@@ -43,6 +44,7 @@ const App = () => {
           <Route path="adicion" element={< AdicionPage/>} />
           <Route path="levantamiento" element={< LevantamientoPage/>} />
           <Route path="/" element={<HomePage/>} />
+          <Route path="products" element={<ProductsPage />}/>
           <Route
             path="my-profile"
             element={

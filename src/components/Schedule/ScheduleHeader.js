@@ -1,6 +1,6 @@
 import './Schedule.css'
 
-export default function ScheduleHeader({ name }) {
+export default function ScheduleHeader({ name , className}) {
 
     return (
         <div className="custom-sched-header">

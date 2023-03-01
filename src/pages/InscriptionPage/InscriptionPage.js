@@ -7,7 +7,7 @@ import SubjectComboBox from '../../components/SubjectComboBox/SubjectComboBox';
 import './InscriptionPage.css';
 
 export default function InscriptionPage() {
-  const [arrowDeploy, setArrowDeploy] = useState(false);
+  const [scheduleDeploy, setScheduleDeploy] = useState(false);
 
   let periods = [
     { name: 'Cuarto Semestre', id: '4' },
@@ -489,26 +489,24 @@ export default function InscriptionPage() {
       <div className="container py-3">
         <h2 className="">SISTEMA DE INSCRIPCIÓN WEB</h2>
         <Data />
-        <div className="row">
-          <div className="col">
-            <h4 className="text-start">Horario</h4>
-          </div>
-        </div>
         <div className="row my-5">
           <div className="col my-2 text-center">
-            <h4 className="my-4">Horario</h4>
-            <div className="container-schedule-header">
+            <h4 className={scheduleDeploy? "my-4" : "invissible"}>Horario</h4>
+            <div className={scheduleDeploy? "container-schedule-header" : "invissible"}>
               {arrDays.map((day, index) => {
-                return <ScheduleHeader key={index} name={day.name} />;
+                return <ScheduleHeader className={scheduleDeploy? "" : "invissible"} key={index} name={day.name} />;
               })}
             </div>
-            {
-            <Schedule arrMaterias={arrMaterias} arrHorarios={arrHorarios} />
-            }
-          </div>
+            <div className={scheduleDeploy? "" : "invissible"}>
+              {
+              <Schedule arrMaterias={arrMaterias} arrHorarios={arrHorarios} />
+              }
+            </div>
+          </div>  
         </div>
-        <div className="mp-3">
-          <h3 className='text-start'>Grupos Ofertados</h3>
+        <div className="mp-3 d-flex justify-content-between">
+          <h3>Grupos Ofertados</h3>
+          <button className='btn button-schedule w-25' onClick={() => setScheduleDeploy(true)}> Ver horairo </button>
         </div>
 
         {periods.map((period, index) => {

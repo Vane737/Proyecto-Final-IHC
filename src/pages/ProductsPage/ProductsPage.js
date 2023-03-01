@@ -30,6 +30,7 @@ export default function ProductsPage() {
       productModal = null;
     };
   }, []);
+  
   // handlers
   const handleChangeOS = (e) => {
     setOsState(e.target.value);
