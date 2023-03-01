@@ -37,7 +37,6 @@
     color: aliceblue;
 }
 
-<<<<<<< HEAD
 .button-schedule {
     font-weight: 700;
     color: white;
@@ -47,9 +46,8 @@
 .button-schedule:hover {
     background-color: rgba(255, 0, 0, 0.85);
     border: none;
-=======
+}
 .btn-blue{
     background-color: #022D6D;
->>>>>>> 4e8371b (componente Button agregado)
     color: white;
 }
