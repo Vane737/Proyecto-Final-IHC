@@ -119,8 +119,8 @@ export default function HomePage() {
     <>
       <NavBarCustom/>
       <div className="container py-5">
-        <h1>232561145 - LIZZETH VALLEJO PEREZ</h1>
-        <div className="row">
+        <h2>232561145 - LIZZETH VALLEJO PEREZ</h2>
+        <div className="row pt-5">
           {arrActions.map((transaction, index) => {
             return (
               <div className="col" key={index}>
