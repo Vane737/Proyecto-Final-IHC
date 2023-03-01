@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button';
 import Data from '../../components/Data/Data';
 import NavAzul from '../../components/NavAzul/NavAzul';
 import Schedule from '../../components/Schedule/Schedule';
@@ -377,7 +378,7 @@ export default function AdicionPage() {
             <h4 className="text-start">Horario</h4>
           </div>
         </div>
-        <div className="row mb-5">
+        <div className="row mb-2">
           <div className="col my-2 text-center">
             <div className="container-schedule-header">
               {arrDays.map((day, index) => {
@@ -386,6 +387,9 @@ export default function AdicionPage() {
             </div>
             {<Schedule arrMaterias={arrMaterias} arrHorarios={arrHorarios} />}
           </div>
+        </div>
+        <div className="text-end">
+          <Button className={'btn btn-blue'} children={`Grabar Materias`} style={{backgorund: '#022D6D'}}/>
         </div>
         <div className="mp-3">
           <h3 className='text-start'>Grupos Ofertados</h3>
