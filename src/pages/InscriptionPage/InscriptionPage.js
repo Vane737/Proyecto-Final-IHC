@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from '../../components/Button/Button';
 import Data from '../../components/Data/Data';
 import NavAzul from '../../components/NavAzul/NavAzul';
 import Schedule from '../../components/Schedule/Schedule';
@@ -134,34 +135,34 @@ export default function InscriptionPage() {
     },
   ];
 
-  const arrProps = [
-    {
-      colinit: '2',
-      colend: '3',
-      rowinit: '1',
-      rowend: '3',
-      color: '#8B0000',
-      name: 'Lenguajes Formales',
-      group: 'SA',
-    },
-    {
-      colinit: '4',
-      colend: '5',
-      rowinit: '1',
-      rowend: '3',
-      color: '#8B0000',
-      name: 'Calculo I',
-      group: 'SA',
-    },
-    {
-      name: 'Calculo I',
-      group: 'SA',
-      colinit: '6',
-      colend: '7',
-      rowinit: '1',
-      rowend: '3',
-    },
-  ];
+  // const arrProps = [
+  //   {
+  //     colinit: '2',
+  //     colend: '3',
+  //     rowinit: '1',
+  //     rowend: '3',
+  //     color: '#8B0000',
+  //     name: 'Lenguajes Formales',
+  //     group: 'SA',
+  //   },
+  //   {
+  //     colinit: '4',
+  //     colend: '5',
+  //     rowinit: '1',
+  //     rowend: '3',
+  //     color: '#8B0000',
+  //     name: 'Calculo I',
+  //     group: 'SA',
+  //   },
+  //   {
+  //     name: 'Calculo I',
+  //     group: 'SA',
+  //     colinit: '6',
+  //     colend: '7',
+  //     rowinit: '1',
+  //     rowend: '3',
+  //   },
+  // ];
   
   const arrDays = [
     { id: '0', name: 'Horario' },
@@ -210,7 +211,7 @@ export default function InscriptionPage() {
       color: 'rgba(42,157,143,0.28)',
     },
   ];
-  
+
   const arrHorarios = [
     {
       idmat: '1',
@@ -223,12 +224,12 @@ export default function InscriptionPage() {
         {
           horaI: '7:00',
           horaF: '7:45',
-          row: [1,2],
+          row: [1, 2],
         },
-        {  
+        {
           horaI: '7:45',
           horaF: '8:30',
-          row: [2,3]
+          row: [2, 3],
         },
       ],
     },
@@ -243,12 +244,12 @@ export default function InscriptionPage() {
         {
           horaI: '7:00',
           horaF: '7:45',
-          row: [1,2],
+          row: [1, 2],
         },
-        { 
+        {
           horaI: '7:45',
           horaF: '8:30',
-          row: [2,3]
+          row: [2, 3],
         },
       ],
     },
@@ -263,12 +264,12 @@ export default function InscriptionPage() {
         {
           horaI: '7:00',
           horaF: '7:45',
-          row: [1,2],
+          row: [1, 2],
         },
-        { 
+        {
           horaI: '7:45',
           horaF: '8:30',
-          row: [2,3]
+          row: [2, 3],
         },
       ],
     },
@@ -283,12 +284,12 @@ export default function InscriptionPage() {
         {
           horaI: '8:30',
           horaF: '9:15',
-          row: [3,4],
+          row: [3, 4],
         },
-        {  
+        {
           horaI: '9:15',
           horaF: '10:00',
-          row: [4,5]
+          row: [4, 5],
         },
       ],
     },
@@ -303,12 +304,12 @@ export default function InscriptionPage() {
         {
           horaI: '8:30',
           horaF: '9:15',
-          row: [3,4],
+          row: [3, 4],
         },
-        {  
+        {
           horaI: '9:15',
           horaF: '10:00',
-          row: [4,5]
+          row: [4, 5],
         },
       ],
     },
@@ -323,12 +324,12 @@ export default function InscriptionPage() {
         {
           horaI: '8:30',
           horaF: '9:15',
-          row: [3,4],
+          row: [3, 4],
         },
-        {  
+        {
           horaI: '9:15',
           horaF: '10:00',
-          row: [4,5]
+          row: [4, 5],
         },
       ],
     },
@@ -343,12 +344,12 @@ export default function InscriptionPage() {
         {
           horaI: '10:00',
           horaF: '10:45',
-          row: [5,6],
+          row: [5, 6],
         },
-        {  
+        {
           horaI: '10:45',
           horaF: '11:30',
-          row: [6,7]
+          row: [6, 7],
         },
       ],
     },
@@ -363,12 +364,12 @@ export default function InscriptionPage() {
         {
           horaI: '10:00',
           horaF: '10:45',
-          row: [5,6],
+          row: [5, 6],
         },
-        {  
+        {
           horaI: '10:45',
           horaF: '11:30',
-          row: [6,7]
+          row: [6, 7],
         },
       ],
     },
@@ -383,12 +384,12 @@ export default function InscriptionPage() {
         {
           horaI: '10:00',
           horaF: '10:45',
-          row: [5,6],
+          row: [5, 6],
         },
-        {  
+        {
           horaI: '10:45',
           horaF: '11:30',
-          row: [6,7]
+          row: [6, 7],
         },
       ],
     },
@@ -403,17 +404,17 @@ export default function InscriptionPage() {
         {
           horaI: '18:15',
           horaF: '19:00',
-          row: [7,8],
+          row: [7, 8],
         },
-        {  
+        {
           horaI: '19:00',
           horaF: '19:45',
-          row: [8,9]
+          row: [8, 9],
         },
-        {  
+        {
           horaI: '19:45',
           horaF: '20:30',
-          row: [9,10]
+          row: [9, 10],
         },
       ],
     },
@@ -428,17 +429,17 @@ export default function InscriptionPage() {
         {
           horaI: '18:15',
           horaF: '19:00',
-          row: [7,8],
+          row: [7, 8],
         },
-        {  
+        {
           horaI: '19:00',
           horaF: '19:45',
-          row: [8,9]
+          row: [8, 9],
         },
-        {  
+        {
           horaI: '19:45',
           horaF: '20:30',
-          row: [9,10]
+          row: [9, 10],
         },
       ],
     },
@@ -453,12 +454,12 @@ export default function InscriptionPage() {
         {
           horaI: '8:30',
           horaF: '9:15',
-          row: [3,4],
+          row: [3, 4],
         },
-        {  
+        {
           horaI: '9:15',
           horaF: '10:00',
-          row: [4,5]
+          row: [4, 5],
         },
       ],
     },
@@ -473,12 +474,12 @@ export default function InscriptionPage() {
         {
           horaI: '10:00',
           horaF: '10:45',
-          row: [5,6],
+          row: [5, 6],
         },
-        {  
+        {
           horaI: '10:45',
           horaF: '11:30',
-          row: [6,7]
+          row: [6, 7],
         },
       ],
     },
@@ -489,7 +490,8 @@ export default function InscriptionPage() {
       <div className="container py-3">
         <h2 className="">SISTEMA DE INSCRIPCIÓN WEB</h2>
         <Data />
-        <div className="row my-5">
+
+        <div className="row my-4">
           <div className="col my-2 text-center">
             <h4 className={scheduleDeploy? "my-4" : "invissible"}>Horario</h4>
             <div className={scheduleDeploy? "container-schedule-header" : "invissible"}>
@@ -504,11 +506,14 @@ export default function InscriptionPage() {
             </div>
           </div>  
         </div>
+
+        <div className="text-end">
+          <button className='btn button-schedule my-2 px-4' onClick={() => setScheduleDeploy(true)}> Ver horairo </button>
+        </div>
         <div className="mp-3 d-flex justify-content-between">
           <h3>Grupos Ofertados</h3>
-          <button className='btn button-schedule w-25' onClick={() => setScheduleDeploy(true)}> Ver horairo </button>
+          <Button className={'btn btn-blue'} children={`Grabar Materias`} style={{backgorund: '#022D6D'}}/>
         </div>
-
         {periods.map((period, index) => {
           return (
             <div className="row" key={index}>

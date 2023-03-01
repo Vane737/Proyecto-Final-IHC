@@ -38,12 +38,17 @@
 }
 
 .button-schedule {
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     background-color: #E92A2A;
+    border: none;
 }
 
 .button-schedule:hover {
     border-color: #E92A2A;
     color: #E92A2A;
+}
+.btn-blue{
+    background-color: #022D6D;
+    color: white;
 }

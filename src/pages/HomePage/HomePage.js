@@ -119,7 +119,7 @@ export default function HomePage() {
     <>
       <NavBarCustom/>
       <div className="container py-5">
-        <h2>232561145 - LIZZETH VALLEJO PEREZ</h2>
+        <h2>212132283 - MARIBEL VARGAS LOPEZ</h2>
         <div className="row pt-5">
           {arrActions.map((transaction, index) => {
             return (
