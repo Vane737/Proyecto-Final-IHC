@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import NavAzul from '../../components/NavAzul/NavAzul';
 import Schedule from '../../components/Schedule/Schedule';
 import ScheduleHeader from '../../components/Schedule/ScheduleHeader';
@@ -5,6 +6,8 @@ import SubjectComboBox from '../../components/SubjectComboBox/SubjectComboBox';
 import './InscriptionPage.css';
 
 export default function InscriptionPage() {
+  const [arrowDeploy, setArrowDeploy] = useState(false);
+
   let periods = [
     { name: 'Cuarto Semestre', id: '4' },
     { name: 'Quinto Semestre', id: '5' },
@@ -130,34 +133,34 @@ export default function InscriptionPage() {
     },
   ];
 
-  const arrProps = [
-    {
-      colinit: '2',
-      colend: '3',
-      rowinit: '1',
-      rowend: '3',
-      color: '#8B0000',
-      name: 'Lenguajes Formales',
-      group: 'SA',
-    },
-    {
-      colinit: '4',
-      colend: '5',
-      rowinit: '1',
-      rowend: '3',
-      color: '#8B0000',
-      name: 'Calculo I',
-      group: 'SA',
-    },
-    {
-      name: 'Calculo I',
-      group: 'SA',
-      colinit: '6',
-      colend: '7',
-      rowinit: '1',
-      rowend: '3',
-    },
-  ];
+  // const arrProps = [
+  //   {
+  //     colinit: '2',
+  //     colend: '3',
+  //     rowinit: '1',
+  //     rowend: '3',
+  //     color: '#8B0000',
+  //     name: 'Lenguajes Formales',
+  //     group: 'SA',
+  //   },
+  //   {
+  //     colinit: '4',
+  //     colend: '5',
+  //     rowinit: '1',
+  //     rowend: '3',
+  //     color: '#8B0000',
+  //     name: 'Calculo I',
+  //     group: 'SA',
+  //   },
+  //   {
+  //     name: 'Calculo I',
+  //     group: 'SA',
+  //     colinit: '6',
+  //     colend: '7',
+  //     rowinit: '1',
+  //     rowend: '3',
+  //   },
+  // ];
   
   const arrDays = [
     { id: '0', name: 'Horario' },
@@ -490,9 +493,9 @@ export default function InscriptionPage() {
           {/* <Button classname='btn color-boton'>Hola Soy un botón</Button> */}
         </div>
         <div className="row my-5">
-          <div className="col my-2 text-center">
+          <div className="col my-2">
             <h4 className="my-4">Horario</h4>
-            <div className="container-schedule-header">
+            <div className="container-schedule-header text-center">
               {arrDays.map((day, index) => {
                 return <ScheduleHeader key={index} name={day.name} />;
               })}
@@ -500,6 +503,7 @@ export default function InscriptionPage() {
             {
             <Schedule arrMaterias={arrMaterias} arrHorarios={arrHorarios} />
             }
+            <button className='btn button-schedule px-5 py-3 w-25 my-2'><i className="bi bi-journals" onClick={() => setArrowDeploy(!arrowDeploy)}></i> &nbsp; Ver Horario</button>
           </div>
         </div>
 

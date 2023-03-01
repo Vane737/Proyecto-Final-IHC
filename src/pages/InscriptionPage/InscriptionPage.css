@@ -36,3 +36,15 @@
     font-size: 16px;
     color: aliceblue;
 }
+
+.button-schedule {
+    font-weight: 700;
+    color: white;
+    background-color: rgba(251, 23, 23, 0.85);
+}
+
+.button-schedule:hover {
+    background-color: rgba(255, 0, 0, 0.85);
+    border: none;
+    color: white;
+}

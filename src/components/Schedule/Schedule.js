@@ -5,9 +5,6 @@ import ScheduleItem from './ScheduleItem';
 
 export default function Schedule({ arrMaterias, arrHorarios }) {
 
-    const addMins = (() => {
-
-    })
 
   return (
     <div className=" container-schedule">
